@@ -135,3 +135,7 @@ footer {
         /* increases the carousel height so it looks good on phones */
     }
 }
+
+.navbar-brand img{
+    height:50px;
+}

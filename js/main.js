@@ -28,6 +28,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+
+   // $locationProvider.html5Mode(true);
+
 }]);
 
 /**
