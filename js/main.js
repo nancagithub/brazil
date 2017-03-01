@@ -20,7 +20,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Pages
     .when("/beaches", {templateUrl: "partials/beaches.html", controller: "PageCtrl"})
     .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
+    .when("/packages", {templateUrl: "partials/packages.html", controller: "PageCtrl"})
     .when("/cities", {templateUrl: "partials/cities.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
     // Blog
@@ -44,14 +44,18 @@ app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
  * Controls all other Pages
  */
 app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
+    console.log("Page Controller reporting for duty.");
 
-  // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
-  });
+    //  $('.nav a').click(function(){
+    //      $('.navbar-collapse').collapse('hide');
+    // });
 
-  // Activates Tooltips for Social Links
+    // Activates the Carousel
+    $('.carousel').carousel({
+        interval: 5000
+    });
+
+    // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
     selector: "a[data-toggle=tooltip]"
   })
