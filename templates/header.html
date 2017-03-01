@@ -11,7 +11,7 @@
 
 
             <a class="navbar-brand" href="#/">
-                <span><img src="/myAirpair/img/brazil.png"></span>
+                <span class="logo"><img src="/myAirpair/img/brazil.png"></span>
                 BRAZILIA
             </a>
         </div>
@@ -19,9 +19,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/services">Cities</a>
+                <li><a href="#/cities">Cities</a>
                 </li>
-                <li><a href="#/about">Beaches</a>
+                <li><a href="#/beaches">Beaches</a>
                 </li>
                 <li><a href="#/pricing">Packages</a>
                 </li>
@@ -44,3 +44,9 @@
     </div>
     <!-- /.container -->
 </nav>
+
+<script>
+    $('.nav a').click(function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+</script>
