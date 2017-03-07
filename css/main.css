@@ -186,7 +186,7 @@ footer {
 
 /*   ANIMATIONS  */
 div.main.ng-enter{
-    transition: 0.5s linear all;
+    transition: 0.4s linear all;
     opacity: 0;
 }
 

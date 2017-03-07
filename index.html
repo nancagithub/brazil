@@ -17,7 +17,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
-    <script src="lib/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-animate.js"></script>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -28,7 +28,8 @@
 <body ng-app="myApp">
 
 <div ng-include='"templates/header.html"'></div>
-<div ng-view ng-view ng-animate="'animate'"></div>
+<div class="main" ng-view ng-animate="'animate'"></div>
+
 <div ng-include='"templates/footer.html"'></div>
 
 <script src="js/main.js"></script>
